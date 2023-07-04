@@ -24,7 +24,6 @@ export class MessagesController {
 
     @Get('/:id')
     getMessages(@Param('id') id: string) {
-        console.log("🚀 ~ file: messages.controller.ts:18 ~ MessagesController ~ getMessages ~ id:", id)
-        
+        return this.messagesService.findOne(id)
     }
 }
