@@ -19,8 +19,7 @@ export class MessagesController {
 
     @Post()
     createMessages(@Body() body: CreateMessageDto) {
-        console.log("🚀 ~ file: messages.controller.ts:12 ~ MessagesController ~ createMessages ~ body:", body)
-        
+        return this.messagesService.create(body.content)
     }
 
     @Get('/:id')
