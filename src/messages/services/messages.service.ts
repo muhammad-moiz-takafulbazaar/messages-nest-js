@@ -13,4 +13,8 @@ export class MessagesService {
         return this.messagesRepo.findOne(id);
     }
 
+    async findAll() {
+        return this.messagesRepo.findAll();
+    }
+
 }
