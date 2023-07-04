@@ -14,7 +14,7 @@ export class MessagesController {
     
     @Get()
     listMessages() {
-
+        return this.messagesService.findAll
     }
 
     @Post()
