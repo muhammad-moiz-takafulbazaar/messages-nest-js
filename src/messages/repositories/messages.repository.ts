@@ -1,6 +1,6 @@
 import { readFile, writeFile } from "fs/promises";
 
-class MessagesRepository {
+export class MessagesRepository {
     async findOne(id: string) {
         const contents = await readFile('messages.json', 'utf8');
         const messages = JSON.parse(contents);
