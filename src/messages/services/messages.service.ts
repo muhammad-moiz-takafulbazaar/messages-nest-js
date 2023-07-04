@@ -8,4 +8,9 @@ export class MessagesService {
         // Don't do this on real app
         this.messagesRepo = new MessagesRepository()
     }
+
+    async findOne(id: string) {
+        return this.messagesRepo.findOne(id);
+    }
+
 }
